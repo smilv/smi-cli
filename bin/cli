@@ -8,7 +8,7 @@ const program = require("commander");
 program.version(require("../package").version);
 
 program.usage("<command>");
-
+//用户输入init回车后，执行init.js
 program
     .command("init")
     .description("Generate a new project")
