@@ -11,7 +11,7 @@ program.usage("<command>");
 //用户输入init回车后，执行init.js
 program
     .command("init")
-    .description("produce project")
+    .description("Generate a new project")
     .action(() => {
         require("../command/init")();
     });
