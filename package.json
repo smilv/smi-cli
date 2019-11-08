@@ -1,6 +1,6 @@
 {
     "name": "smilv-cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "react pc 端、vue 手机端脚手架",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
