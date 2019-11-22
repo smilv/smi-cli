@@ -1,11 +1,11 @@
 {
     "tpl": {
         "vue-m": {
-            "url": "https://github.com/smilv/mengduo.git",
+            "url": "https://github.com/smilv/vue-template.git",
             "branch": "master"
         },
         "react-p": {
-            "url": "https://github.com/smilv/kuqi.git",
+            "url": "https://github.com/smilv/react-template.git",
             "branch": "master"
         }
     }
