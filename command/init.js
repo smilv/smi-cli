@@ -10,6 +10,7 @@ module.exports = () => {
     co(function*() {
         let tplName = yield prompt("Project type (react-p | vue-m): ");
         let projectName = yield prompt("Project name: ");
+        let yn = yield prompt("Install Package (Y/N)?: ");
         let projectPath = path.resolve(projectName);
         let gitUrl;
         let branch;
@@ -30,8 +31,13 @@ module.exports = () => {
                 console.log(error);
                 process.exit();
             }
-            process.chdir(projectPath);
-            require("../lib/install");
+            if (/^[y|Y]$/.test(yn)) {
+                process.chdir(projectPath);
+                require("../lib/install");
+            } else {
+                console.log(chalk.green("\n √ successful!"));
+                process.exit();
+            }
         });
     });
 };
